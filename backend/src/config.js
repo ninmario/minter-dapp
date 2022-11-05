@@ -7,23 +7,53 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "Vari";
+const description = "description";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 15,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Skin" },
+      { name: "Eyes" },
+      { name: "Lips" },
+      { name: "Lipsfeatures" },
+      { name: "Makeup" },
+      { name: "Face" },
+      { name: "Lashes" },
+      { name: "Necklace" },
+      { name: "Hair" },
+      { name: "Accessoiries5" },
+      { name: "Horns" },
+      { name: "Accessories" },
+      { name: "Accessories2" },
+      { name: "Accessories3" },
+      { name: "Accessories4" },
     ],
   },
+  {
+    growEditionSizeTo: 36,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Skin" },
+      { name: "Makeup" },
+      { name: "Face2" },
+      { name: "Lips" },
+      { name: "Lipsfeatures" },
+      { name: "Lashes" },
+      { name: "Necklace" },
+      { name: "Hair" },
+      { name: "Accessoiries5" },
+      { name: "Horns" },
+      { name: "Accessories" },
+      { name: "Accessories2" },
+      { name: "Accessories3" },
+      { name: "Accessories4" },
+  ],
+  },
+
 ];
 
 const shuffleLayerConfigurations = true;
@@ -31,20 +61,20 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2560,
+  height: 2560,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://abc.xyz", // Replace with website or remove
 };
 
 // NFTPort Info
 
 // ** REQUIRED **
-const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
-const LIMIT = 2; // Your API key rate limit
+const AUTH = process.env.NFTPORT_API_KEY; // Set  in the .env file
+const LIMIT = 2; //  API key rate limit
 const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
