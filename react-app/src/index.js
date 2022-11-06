@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./css/style.css";
+import "./css/splide.min.css";
+import "./css/three-dots.min.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
